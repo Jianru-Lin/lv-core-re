@@ -1,0 +1,34 @@
+.Block {
+    transition: all .3s;
+    position: relative;
+    display: flex;
+}
+
+.Block.open {
+    background-color: var(--block-bg-color-open);
+    padding: 1em;
+    flex-direction: column;
+    border-radius: 4px;
+    color: var(--block-color-open);
+}
+
+.Block.open.hover,
+.Block.open:hover {
+    outline: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.Block.close {
+    padding: 0px,;
+    background-color: var(--block-bg-color-close);
+    border-radius: 2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: var(--block-color-close);
+}
+
+.Block.close.hover,
+.Block.close:hover {
+    background-color: var(--block-bg-color-close-hover);
+    color: var(--block-color-close-hover);
+}
